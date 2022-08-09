@@ -6,15 +6,9 @@ const Hero = () => {
     <div className="background">
     <Container>
         <Row className="section">
-          <Col md={6} className="details">
+          <Col md={6} xs={6} className="details">
             <p className="name">I'm Muhammad Danish</p>
             <p className="designation">Web Developer</p>
-            {/* <div className="hire-section">
-              <div className="pill">
-                <div className="circle"></div>
-                <p>Hire me</p>
-              </div>
-            </div> */}
             <button class="learn-more my-2">
               <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
@@ -22,7 +16,7 @@ const Hero = () => {
               <span class="button-text">Hire me</span>
             </button>
           </Col>
-          <Col md={6} className="img-section">
+          <Col md={6} xs={6} className="img-section">
             <div className="img-box">
               <Image src="../../../assests/images/hero-img2.jpeg" />
             </div>

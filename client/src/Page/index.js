@@ -13,8 +13,8 @@ const Main = () => {
       <About />
       <Portfolios />
       <Resume />
-      <Contact />
-      <Footer />
+      {/* <Contact />
+      <Footer /> */}
     </>
   );
 };

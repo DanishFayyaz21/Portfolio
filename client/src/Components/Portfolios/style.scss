@@ -1,119 +1,246 @@
-#Portfolio {
-  .portfolio-background {
-    clip-path: polygon(
-      30% 0%,
-      73% 8%,
-      100% 0,
-      100% 93%,
-      74% 100%,
-      32% 91%,
-      0 100%,
-      0 11%
-    );
-    margin-top: -120px;
-    background: linear-gradient(
-      to right,
-      rgb(110, 32, 32) 0%,
-      rgb(185, 172, 172) 90%
-    );
+@media only screen and (max-width: 450px) {
+  #Portfolio {
+    .portfolio-background {
+      clip-path: polygon(
+        67% 4%,
+        100% 0,
+        100% 36%,
+        100% 59%,
+        100% 97%,
+        66% 100%,
+        31% 97%,
+        0 100%,
+        0 4%,
+        34% 0
+      );
+      margin-top: -120px;
+      background: linear-gradient(
+        to right,
+        rgb(110, 32, 32) 0%,
+        rgb(185, 172, 172) 90%
+      );
 
-    z-index: 2;
-    .section {
-      height: 1000px;
-      padding: 220px 0px;
-      align-self: center;
-      h2 {
-        color: #fff;
-        font-size: 42px !important;
-      }
-      .portfolio-card {
-        background-color: #252525;
-        height: 300px;
-        z-index: 4px!important;
-        text-align: center;
-        border-radius: 12px;
-        padding: 15px;
-
-        object-fit: contain;
-        a {
-          text-decoration: none;
+      z-index: 2;
+      .section {
+        height: 900px;
+        padding: 220px 0px;
+        align-self: center;
+        h2 {
+          color: #fff;
+          font-size: 22px !important;
         }
-        .webName {
-          color: gray;
-          font-size: 15px;
-          font-weight: 700 !important;
-          transition: 0.5s;
-          margin-top: 10px;
-        }
-        .img {
-          margin-top: 80px;
-          height: 60px;
-          transition: 0.5s;
-          object-fit: contain !important;
-        }
-        .city-img {
-          margin-top: 80px;
-          align-self: center !important;
-          height: 70px;
-          transition: 0.5s;
-          position: relative;
-          object-fit: contain !important;
-        }
-
-        .summery {
-          display: none;
-          transition: 1s;
-          color: gray;
-          font-size: 14px;
-          margin: 15px;
-          text-align: left;
-
-
-          .role {
-            font-size: 20px;
-            text-align: left;
-          }
-          .tech {
-            font-size: 18px;
-            font-weight: 700;
-          }
-          .tech-circle {
-            margin: 0px 7px;
-            width: 5rem;
-            height: 25px;
-            text-align: center;
-            border-radius: 4px;
-            font-weight: 600;
-            border: 1px solid gray;
-            background: #fff;
-          }
-        }
-        &:hover {
-          background-color: #282828;
-          box-shadow: 2px 2px 25px #282828;
-          transition: 0.5s;
-          .card-content {
-            display: flex;
-            justify-content: space-between;
-          }
-          .summery {
-            display: block;
-          }
-          .img {
-            margin-top: 0 !important;
-            height: 43px;
-          }
-          .city-img {
-            margin-top: 5px;
-            height: 45px;
+        .portfolio-card {
+          background-color: #252525;
+          height: 230px;
+          z-index: 4px !important;
+          text-align: center;
+          border-radius: 12px;
+          padding: 7px;
+          margin: 10px 0px;
+          object-fit: contain;
+          a {
+            text-decoration: none;
           }
           .webName {
-            position: relative;
-            font-size: 11px;
-            white-space: nowrap;
             color: gray;
-            display: block;
-            font-weight: 600;
+            font-size: 12px;
+            font-weight: 700 !important;
+            transition: 0.5s;
+            margin-top: 10px;
+          }
+          .img {
+            margin-top: 80px;
+            height: 40px;
+            transition: 0.5s;
+            object-fit: contain !important;
+          }
+          .city-img {
+            margin-top: 60px;
+            align-self: center !important;
+            height: 60px;
+            transition: 0.5s;
+            position: relative;
+            object-fit: contain !important;
+          }
+
+          .summery {
+            display: none;
+            transition: 1s;
+            color: gray;
+            font-size: 10px;
+            margin: 10px;
+            text-align: left;
+
+            .role {
+              font-size: 12px;
+              text-align: left;
+            }
+            .tech {
+              font-size: 13px;
+              font-weight: 700;
+            }
+            .tech-circle {
+              margin: 3px;
+              width: 5rem;
+              height: 17px;
+              text-align: center;
+              border-radius: 4px;
+              font-weight: 600;
+              border: 1px solid gray;
+              background: #fff;
+            }
+          }
+          &:hover {
+            background-color: #282828;
+            box-shadow: 2px 2px 25px #282828;
+            transition: 0.5s;
+            .card-content {
+              display: flex;
+              justify-content: space-between;
+            }
+            .summery {
+              display: block;
+            }
+            .img {
+              margin-top: 0 !important;
+              height: 22px;
+            }
+            .city-img {
+              margin-top: 5px;
+              height: 30px;
+            }
+            .webName {
+              position: relative;
+              font-size: 9px;
+              white-space: nowrap;
+              color: gray;
+              display: block;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  #Portfolio {
+    .portfolio-background {
+      clip-path: polygon(
+        30% 0%,
+        73% 8%,
+        100% 0,
+        100% 93%,
+        74% 100%,
+        32% 91%,
+        0 100%,
+        0 11%
+      );
+      margin-top: -120px;
+      background: linear-gradient(
+        to right,
+        rgb(110, 32, 32) 0%,
+        rgb(185, 172, 172) 90%
+      );
+
+      z-index: 2;
+      .section {
+        height: 1000px;
+        padding: 220px 0px;
+        align-self: center;
+        h2 {
+          color: #fff;
+          font-size: 42px !important;
+        }
+        .portfolio-card {
+          background-color: #252525;
+          height: 300px;
+          z-index: 4px !important;
+          text-align: center;
+          border-radius: 12px;
+          padding: 15px;
+
+          object-fit: contain;
+          a {
+            text-decoration: none;
+          }
+          .webName {
+            color: gray;
+            font-size: 15px;
+            font-weight: 700 !important;
+            transition: 0.5s;
+            margin-top: 10px;
+          }
+          .img {
+            margin-top: 80px;
+            height: 60px;
+            transition: 0.5s;
+            object-fit: contain !important;
+          }
+          .city-img {
+            margin-top: 80px;
+            align-self: center !important;
+            height: 70px;
+            transition: 0.5s;
+            position: relative;
+            object-fit: contain !important;
+          }
+
+          .summery {
+            display: none;
+            transition: 1s;
+            color: gray;
+            font-size: 14px;
+            margin: 15px;
+            text-align: left;
+
+            .role {
+              font-size: 20px;
+              text-align: left;
+            }
+            .tech {
+              font-size: 18px;
+              font-weight: 700;
+            }
+            .tech-circle {
+              margin: 0px 7px;
+              width: 5rem;
+              height: 25px;
+              text-align: center;
+              border-radius: 4px;
+              font-weight: 600;
+              border: 1px solid gray;
+              background: #fff;
+            }
+          }
+          &:hover {
+            background-color: #282828;
+            box-shadow: 2px 2px 25px #282828;
+            transition: 0.5s;
+            .card-content {
+              display: flex;
+              justify-content: space-between;
+            }
+            .summery {
+              display: block;
+            }
+            .img {
+              margin-top: 0 !important;
+              height: 43px;
+            }
+            .city-img {
+              margin-top: 5px;
+              height: 45px;
+            }
+            .webName {
+              position: relative;
+              font-size: 11px;
+              white-space: nowrap;
+              color: gray;
+              display: block;
+              font-weight: 600;
+            }
           }
         }
       }
