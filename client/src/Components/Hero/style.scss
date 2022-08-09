@@ -1,0 +1,128 @@
+
+
+#hero {
+  .background{
+    background-image: url("../../../public/assests/images/sun-tornado.svg");
+background-repeat: no-repeat;
+background-size: cover;
+background-color: #202020;}
+  .section {
+    height: 920px;
+    .details {
+      align-self: center;
+      .name {
+        color: #fff !important;
+        font-size: 55px;
+        --tw-text-opacity: 1;
+        margin-bottom: 0px;
+      }
+      .designation {
+        color: #fff !important;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 100 !important;
+        --tw-text-opacity: 1;
+      }
+      @mixin transition(
+        $property: all,
+        $duration: 0.45s,
+        $ease: cubic-bezier(0.65, 0, 0.076, 1)
+      ) {
+        transition: $property $duration $ease;
+      }
+
+      button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-size: 20px !important;
+        font-family: inherit;
+        &.learn-more {
+          width: 12rem;
+          height: auto;
+          .circle {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 1.625rem;
+            background: linear-gradient(to right, rgb(110, 32, 32) 10%, rgb(185, 172, 172) 90%);
+            box-shadow: 1px 1px 50px #202020;
+            transform: scale(1.05);
+          }
+          .button-text {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 7px;
+            align-self: center;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1.6;
+            font-size: 16px;
+            background-color: transparent;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+        &:hover {
+          .circle {
+            width: 80%;
+            .icon {
+              &.arrow {
+                transform: translate(1rem, 0);
+              }
+            }
+          }
+          .button-text {
+            color: #fff;
+            margin-left: -30px;
+          }
+        }
+      }
+    }
+  }
+  .img-section {
+    display: flex;
+    justify-content: end;
+    .img-box {
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      height: 470px;
+      margin-top: 200px;
+      width: 470px;
+      border-radius: 50%;
+
+      img {
+        align-self: center !important;
+        margin-top: 20px;
+        width: auto;
+        height: 430px;
+        transition: 0.7s;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(1px 1px 7px red);
+
+        &:hover {
+          opacity: 5;
+          transform: scale(1.02);
+          filter: drop-shadow(1px 1px 15px red);
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
