@@ -1,4 +1,37 @@
-.share {
+@media only screen and (max-width: 450px) {
+  .share {
+    display: flex;
+
+    p {
+      margin-top: 15px;
+      font-size: 14px;
+      color: brown;
+      align-self: center;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    .social-logos {
+      display: flex;
+      margin-left: 7px;
+      justify-content: space-between;
+      width: 10%;
+      align-self: center;
+      svg {
+        margin: 0px 7px;
+        font-size: 15px;
+        color: brown;
+        transition: none;
+        cursor: pointer;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .share {
     display: flex;
 
     p {
@@ -27,3 +60,4 @@
       }
     }
   }
+}

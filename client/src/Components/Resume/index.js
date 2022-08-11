@@ -3,6 +3,8 @@ import "./style.scss";
 import { GrOrganization } from "react-icons/gr";
 import { MdSchool, MdWork } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
+import "./sass/circle.scss";
+import "./css/circle.css";
 const Resume = () => {
   return (
     <div id="resume">
@@ -14,7 +16,7 @@ const Resume = () => {
                 <h2>Resume</h2>
               </div>
               <Row className="mx-md-3 py-md-3">
-                <Col md={6} className="education">
+                <Col md={6} xs={12} className="education">
                   <h3 className="custom-border d-flex">
                     <span className="icon">
                       <MdSchool />
@@ -98,7 +100,7 @@ const Resume = () => {
                             className="organzation"
                           >
                             <span>
-                              <GrOrganization size={20} />
+                              <GrOrganization className="companyIcon" />
                             </span>{" "}
                             wellcreator
                           </a>
@@ -118,69 +120,88 @@ const Resume = () => {
                   </div>
                 </Col>
 
-                <Col md={6} className="skills">
+                <Col md={6} xs={12} className="skills">
                   <h3 className="custom-border d-flex">
                     <span className="icon">
                       <GiSkills />
                     </span>
                     Skills
                   </h3>
-                  <div>
-                    <div class="d-flex justify-content-center flex-wrap py-md-4">
-                      <div class="clearfix">
-                        <div class="c100 p80 big">
+                  <div className="row my-md-5 mx-md-2 my-4 mx-1">
+                    <Col md={4} xs={6}>
+                      <div className="d-flex flex-column">
+                        <div class="c100 p80 align-self-center">
                           <span>80%</span>
                           <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
                           </div>
                         </div>
-                        <div className="text-center">
-                          <p className="skillName">React js</p>
-                        </div>
+                        <p className="skilltitle">Problem solving</p>
                       </div>
-
-                      <div class="clearfix">
-                        <div class="c100 p75 big">
+                    </Col>
+                    <Col md={4} xs={6}>
+                      <div className="d-flex flex-column">
+                        <div class="c100 p90 align-self-center">
+                          <span>90%</span>
+                          <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                          </div>
+                        </div>
+                        <p className="skilltitle">Visual Thinking</p>
+                      </div>
+                    </Col>
+                    <Col md={4} xs={6}>
+                      <div className="d-flex flex-column">
+                        <div class="c100 p75 align-self-center">
                           <span>75%</span>
                           <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
                           </div>
                         </div>
-                        <div className="text-center">
-                          <p className="skillName">Node js</p>
-                        </div>
+                        <p className="skilltitle">Communication</p>
                       </div>
-
-
-                      <div class="clearfix">
-                        <div class="c100 p65 big">
+                    </Col>
+                    <Col md={4} xs={6}>
+                      <div className="d-flex flex-column">
+                        <div class="c100 p70 align-self-center">
                           <span>70%</span>
                           <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
                           </div>
                         </div>
-                        <div className="text-center">
-                          <p className="skillName">DataBase</p>
-                        </div>
+                        <p className="skilltitle">Management Skills.</p>
                       </div>
+                    </Col>
 
-                    
-                      <div class="clearfix">
-                        <div class="c100 p88 big">
-                          <span>88%</span>
+                    <Col md={4} xs={6}>
+                      <div className="d-flex flex-column">
+                        <div class="c100 p85 align-self-center">
+                          <span>85%</span>
                           <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
                           </div>
                         </div>
-                        <div className="text-center">
-                          <p className="skillName">UI & UX </p>
-                        </div>
+                        <p className="skilltitle">Leadership</p>
                       </div>
-                    </div>
+                    </Col>
+
+                    <Col md={4} xs={6}>
+                      <div className="d-flex flex-column">
+                        <div class="c100 p85 align-self-center">
+                          <span>85%</span>
+                          <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                          </div>
+                        </div>
+                        <p className="skilltitle">Teamwork</p>
+                      </div>
+                    </Col>
                   </div>
                 </Col>
               </Row>

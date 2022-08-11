@@ -22,8 +22,8 @@
 
       z-index: 2;
       .section {
-        height: 900px;
-        padding: 220px 0px;
+        height: 700px;
+        padding: 80px 0px;
         align-self: center;
         h2 {
           color: #fff;
@@ -126,6 +126,7 @@
 
 @media only screen and (min-width: 760px) {
   #Portfolio {
+    
     .portfolio-background {
       clip-path: polygon(
         30% 0%,

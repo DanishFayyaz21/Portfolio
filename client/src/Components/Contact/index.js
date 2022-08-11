@@ -1,22 +1,41 @@
 import { Container, Row, Col, Form } from "react-bootstrap";
-import { GET, POST } from "../../apicontroller/ApiController.js";
+import { POST } from "../../apicontroller/ApiController.js";
 import { MdPhoneAndroid, MdLocationPin } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 import Share from "../Share";
 import "./style.scss";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Contact = () => {
-  const formdata={
-    name:"fayyaz",
-    email:"danisd2100@gmail.com",
-    phone:"928987598798", 
-    subject:"web developer",
-    message:"shdkahkahj"
-}
-  useEffect(()=>{
-    const result = POST("contact",formdata);
-  },[])
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const submit = (e) => {
+    e.preventDefault();
+    const formData = {
+      name: name,
+      email: email,
+      phone: phone,
+      subject: subject,
+      message: message,
+    };
+    setName("");
+    setEmail("");
+    setPhone("");
+    setSubject("");
+    setMessage("");
+
+    console.log(formData);
+    const result = POST("contact", formData);
+    console.log(result);
+  };
+
+  useEffect(() => {
+    // const result = POST("contact", formdata);
+  }, []);
   return (
     <div id="contact">
       <div className="about-background">
@@ -24,7 +43,7 @@ const Contact = () => {
           <div className="section ">
             <div className="contact-me">
               <h2 className="custom-border">Contact Me</h2>
-              <h3>Minding a business? let's make it!</h3>
+              <h3 className="qoute">Minding a business? let's make it!</h3>
             </div>
             <Row className="my-md-5 mx-md-3">
               <Col md={4}>
@@ -59,7 +78,7 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mx-md-3">
+                <div className="mx-md-3 share ">
                   <Share />
                 </div>
               </Col>
@@ -67,11 +86,25 @@ const Contact = () => {
                 <Form className="contact-form">
                   <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridEmail">
-                      <Form.Control type="text" placeholder="Your Name" />
+                      <Form.Control
+                        type="text"
+                        value={name}
+                        onChange={(e) => {
+                          setName(e.target.value);
+                        }}
+                        placeholder="Your Name"
+                      />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridPassword">
-                      <Form.Control type="email" placeholder="Your Email" />
+                      <Form.Control
+                        type="email"
+                        value={email}
+                        onChange={(e) => {
+                          setEmail(e.target.value);
+                        }}
+                        placeholder="Your Email"
+                      />
                     </Form.Group>
                   </Row>
 
@@ -81,7 +114,14 @@ const Contact = () => {
                       className="mb-3"
                       controlId="formGridAddress1"
                     >
-                      <Form.Control type="text" placeholder="Your Phone" />
+                      <Form.Control
+                        type="text"
+                        value={phone}
+                        onChange={(e) => {
+                          setPhone(e.target.value);
+                        }}
+                        placeholder="Your Phone"
+                      />
                     </Form.Group>
 
                     <Form.Group
@@ -89,7 +129,14 @@ const Contact = () => {
                       className="mb-3"
                       controlId="formGridAddress2"
                     >
-                      <Form.Control type="text" placeholder="Subject" />
+                      <Form.Control
+                        value={subject}
+                        type="text"
+                        onChange={(e) => {
+                          setSubject(e.target.value);
+                        }}
+                        placeholder="Subject"
+                      />
                     </Form.Group>
 
                     <Form.Group
@@ -99,6 +146,10 @@ const Contact = () => {
                       <Form.Control
                         as="textarea"
                         rows={7}
+                        value={message}
+                        onChange={(e) => {
+                          setMessage(e.target.value);
+                        }}
                         placeholder="Your message here"
                       />
                     </Form.Group>
@@ -109,7 +160,9 @@ const Contact = () => {
                       <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>
                       </span>
-                      <span class="button-text">Submit</span>
+                      <span onClick={submit} class="button-text">
+                        Submit
+                      </span>
                     </button>
                   </div>
                 </Form>
