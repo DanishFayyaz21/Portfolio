@@ -124,9 +124,137 @@
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 450px) and (max-width: 1000px) {
   #Portfolio {
-    
+    .portfolio-background {
+      clip-path: polygon(
+        67% 4%,
+        100% 0,
+        100% 36%,
+        100% 59%,
+        100% 97%,
+        66% 100%,
+        31% 97%,
+        0 100%,
+        0 4%,
+        34% 0
+      );
+      margin-top: -120px;
+      background: linear-gradient(
+        to right,
+        rgb(110, 32, 32) 0%,
+        rgb(185, 172, 172) 90%
+      );
+
+      z-index: 2;
+      .section {
+        height: 750px;
+        padding: 80px 0px;
+        align-self: center;
+        h2 {
+          color: #fff;
+          font-size: 24px !important;
+        }
+        .portfolio-card {
+          background-color: #252525;
+          height: 250px;
+          z-index: 4px !important;
+          text-align: center;
+          border-radius: 12px;
+          padding: 9px;
+          margin: 10px 0px;
+          object-fit: contain;
+          a {
+            text-decoration: none;
+          }
+          .webName {
+            color: gray;
+            font-size: 14px;
+            font-weight: 700 !important;
+            transition: 0.5s;
+            margin-top: 10px;
+          }
+          .img {
+            margin-top: 80px;
+            height: 50px;
+            transition: 0.5s;
+            object-fit: contain !important;
+          }
+          .city-img {
+            margin-top: 60px;
+            align-self: center !important;
+            height: 65px;
+            transition: 0.5s;
+            position: relative;
+            object-fit: contain !important;
+          }
+
+          .summery {
+            display: none;
+            transition: 1s;
+            color: gray;
+            font-size: 12px;
+            margin: 7px;
+            margin-bottom: 5px !important;
+            text-align: left;
+            p {
+              margin-bottom: 5px;
+            }
+            .role {
+              font-size: 14px;
+              text-align: left;
+            }
+            .tech {
+              font-size: 14px;
+              font-weight: 700;
+            }
+            .tech-circle {
+              margin: 3px;
+              width: 5rem;
+              height: 20px;
+              text-align: center;
+              border-radius: 4px;
+              font-weight: 600;
+              border: 1px solid gray;
+              background: #fff;
+            }
+          }
+          &:hover {
+            background-color: #282828;
+            box-shadow: 2px 2px 25px #282828;
+            transition: 0.5s;
+            .card-content {
+              display: flex;
+              justify-content: space-between;
+            }
+            .summery {
+              display: block;
+            }
+            .img {
+              margin-top: 0 !important;
+              height: 30px;
+            }
+            .city-img {
+              margin-top: 5px;
+              height: 35px;
+            }
+            .webName {
+              position: relative;
+              font-size: 12px;
+              white-space: nowrap;
+              color: gray;
+              display: block;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #Portfolio {
     .portfolio-background {
       clip-path: polygon(
         30% 0%,
@@ -160,7 +288,7 @@
           z-index: 4px !important;
           text-align: center;
           border-radius: 12px;
-          padding: 15px;
+          padding: 10px 8px;
 
           object-fit: contain;
           a {
@@ -193,7 +321,7 @@
             transition: 1s;
             color: gray;
             font-size: 14px;
-            margin: 15px;
+            margin: 7px 5px;
             text-align: left;
 
             .role {

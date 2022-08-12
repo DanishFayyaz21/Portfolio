@@ -46,7 +46,7 @@ const Contact = () => {
               <h3 className="qoute">Minding a business? let's make it!</h3>
             </div>
             <Row className="my-md-5 mx-md-3">
-              <Col md={4}>
+              <Col  md={5}>
                 <div className="contact-details">
                   <div className="contact-card">
                     <div className="contact-circle">
@@ -82,7 +82,7 @@ const Contact = () => {
                   <Share />
                 </div>
               </Col>
-              <Col md={8}>
+              <Col md={7}>
                 <Form className="contact-form">
                   <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridEmail">

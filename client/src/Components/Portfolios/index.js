@@ -10,8 +10,8 @@ const Portfolios = () => {
             <div>
               <h2 className="custom-border">Portfolios</h2>
             </div>
-            <Row className="mx-md-3 py-md-5">
-              <Col lg={3} md={6} xs={6}>
+            <Row className="mx-md-3 d-flex justify-content-md-center py-md-5">
+              <Col lg={3} md={5} xs={6}>
                 <div className="portfolio-card">
                   <a
                     className="card-content"
@@ -47,7 +47,7 @@ const Portfolios = () => {
                 </div>
               </Col>
 
-              <Col lg={3} md={6} xs={6}>
+              <Col lg={3} md={5} xs={6}>
                 <div className="portfolio-card">
                   <a
                     className="card-content"
@@ -83,7 +83,7 @@ const Portfolios = () => {
                 </div>
               </Col>
 
-              <Col lg={3} md={6} xs={6}>
+              <Col lg={3} md={5} xs={6}>
                 <div className="portfolio-card">
                   <a
                     className="card-content"
@@ -119,7 +119,7 @@ const Portfolios = () => {
                 </div>
               </Col>
 
-              <Col lg={3} md={6} xs={6}>
+              <Col lg={3} md={5} xs={6}>
                 <div className="portfolio-card">
                   <a
                     className="card-content"

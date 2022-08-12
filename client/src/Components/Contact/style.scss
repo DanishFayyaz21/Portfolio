@@ -175,8 +175,182 @@
 
 
 
+@media only screen and (min-width: 460px) and (max-width:1000px) {
+ 
+  #contact {
+    .about-background {
+      clip-path: polygon(
+        67% 4%,
+        100% 0,
+        100% 36%,
+        100% 59%,
+        100% 97%,
+        66% 100%,
+        31% 97%,
+        0 100%,
+        0 4%,
+        34% 0
+      );
+      margin-top: -140px;
+      background-color: #fff;
+  
+      z-index: 2;
+      .section {
+        // height: 500px;
+        padding: 70px 0px;
+        align-self: center;
+  
+        .contact-me {
+          h2 {
+            font-size: 24px;
+            white-space: nowrap;
+          }
+          .qoute{
+            font-size: 16px !important;
+          }
+        }
+        .contact-details {
 
-@media only screen and (min-width: 760px) {
+          .contact-card {
+            margin-top: 20px;
+            display: flex;
+            .details {
+              margin: 0px 10px;
+              h4 {
+                font-size: 15px !important;
+                font-weight: 700 !important;
+                margin-bottom: 5px;
+                margin-left: 5px;
+              }
+              p {
+                font-size: 13px;
+                color: gray;
+                font-weight: 600;
+              }
+            }
+          }
+          .contact-circle {
+            // @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: linear-gradient(
+              to right,
+              rgb(110, 32, 32) 10%,
+              rgb(136, 125, 125) 90%
+            );
+            box-shadow: 0px 0px 5px #202020;
+            transform: scale(1.05);
+            text-align: center;
+            svg {
+              color: #fff;
+              margin-top: 10px;
+              font-size: 20px;
+            }
+          }
+        }
+        .share{
+          margin: 0px 0px;
+        }
+        .contact-form {
+          margin: 10px 10px;
+          .form-control {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 14px;
+            border: none;
+            border-radius: 0px;
+            color: var(--primary-color);
+            border-bottom: 1px solid rgb(186, 186, 186);
+            &:focus {
+              box-shadow: none;
+              border-bottom: 1px solid var(--primary-color);
+            }
+          }
+  
+          @mixin transition(
+            $property: all,
+            $duration: 0.45s,
+            $ease: cubic-bezier(0.65, 0, 0.076, 1)
+          ) {
+            transition: $property $duration $ease;
+          }
+  
+          button {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+            text-decoration: none;
+            background: transparent;
+            padding: 0;
+            font-size: 20px !important;
+            font-family: inherit;
+            &.learn-more {
+              width: 12rem;
+              height: auto;
+              .circle {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+                position: relative;
+                display: block;
+                margin: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 1.625rem;
+                background: linear-gradient(
+                  to right,
+                  rgb(110, 32, 32) 10%,
+                  rgb(136, 125, 125) 90%
+                );
+                box-shadow: 0px 0px 5px #202020;
+                transform: scale(1.05);
+              }
+              .button-text {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+                position: absolute;
+                top: 0px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 7px;
+                align-self: center;
+                color: var(--primary-color);
+                font-weight: 700;
+                line-height: 1.6;
+                font-size: 16px;
+                background-color: transparent;
+                text-align: center;
+                text-transform: uppercase;
+              }
+            }
+            &:hover {
+              .circle {
+                width: 78%;
+                .icon {
+                  &.arrow {
+                    transform: translate(1rem, 0);
+                  }
+                }
+              }
+              .button-text {
+                color: #fff;
+                margin-left: -30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media only screen and (min-width: 1000px) {
   #contact {
     .about-background {
       clip-path: polygon(
@@ -248,7 +422,7 @@
           }
         }
         .contact-form {
-          margin: 0px 50px;
+          margin: 0px;
           .form-control {
             font-size: 14px;
             font-weight: 500;

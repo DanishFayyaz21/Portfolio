@@ -128,7 +128,7 @@ const Resume = () => {
                     Skills
                   </h3>
                   <div className="row my-md-5 mx-md-2 my-4 mx-1">
-                    <Col md={4} xs={6}>
+                    <Col lg={4} md={6} xs={6}>
                       <div className="d-flex flex-column">
                         <div class="c100 p80 align-self-center">
                           <span>80%</span>
@@ -140,7 +140,7 @@ const Resume = () => {
                         <p className="skilltitle">Problem solving</p>
                       </div>
                     </Col>
-                    <Col md={4} xs={6}>
+                    <Col lg={4} md={6} xs={6}>
                       <div className="d-flex flex-column">
                         <div class="c100 p90 align-self-center">
                           <span>90%</span>
@@ -152,7 +152,7 @@ const Resume = () => {
                         <p className="skilltitle">Visual Thinking</p>
                       </div>
                     </Col>
-                    <Col md={4} xs={6}>
+                    <Col lg={4} md={6} xs={6}>
                       <div className="d-flex flex-column">
                         <div class="c100 p75 align-self-center">
                           <span>75%</span>
@@ -164,7 +164,7 @@ const Resume = () => {
                         <p className="skilltitle">Communication</p>
                       </div>
                     </Col>
-                    <Col md={4} xs={6}>
+                    <Col lg={4} md={6} xs={6}>
                       <div className="d-flex flex-column">
                         <div class="c100 p70 align-self-center">
                           <span>70%</span>
@@ -177,7 +177,7 @@ const Resume = () => {
                       </div>
                     </Col>
 
-                    <Col md={4} xs={6}>
+                    <Col lg={4} md={6} xs={6}>
                       <div className="d-flex flex-column">
                         <div class="c100 p85 align-self-center">
                           <span>85%</span>
@@ -190,7 +190,7 @@ const Resume = () => {
                       </div>
                     </Col>
 
-                    <Col md={4} xs={6}>
+                    <Col lg={4} md={6} xs={6}>
                       <div className="d-flex flex-column">
                         <div class="c100 p85 align-self-center">
                           <span>85%</span>

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1000px) {
   #footer {
     .background {
       position: sticky;
@@ -43,8 +43,19 @@
   }
 }
 
+@media only screen and (min-width: 450px) and (max-width: 1000px) {
+  #footer {
+    .background {
+      .section {
+        .up-arrow {
+          width: 7%;
+        }
+      }
+    }
+  }
+}
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 1000px) {
   #footer {
     .background {
       position: sticky;

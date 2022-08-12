@@ -8,16 +8,12 @@ const About = () => {
         <Container>
           <Row className="section ">
             <Col md={4}>
-              <div className="d-flex justify-content-lg-center">
+              <div className="d-flex justify-content-center">
                 <div className="img-box">
-                  
-                    <Image src="../../../assests/images/about2.png" />
-                  
-                </div>
-                <div className="shareComponent1">
-                  <Share className="align-self-center" />
+                  <Image src="../../../assests/images/about2.png" />
                 </div>
               </div>
+              
             </Col>
             <Col md={8}>
               <div className="about-me">
@@ -41,9 +37,10 @@ const About = () => {
                     there at your desk, talking down at your subordinates.
                   </p>
                 </div>
-                <div className="shareComponent2">
+                <div>
                   <Share />
                 </div>
+                
               </div>
             </Col>
           </Row>
