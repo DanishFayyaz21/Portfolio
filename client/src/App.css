@@ -11,7 +11,7 @@
 .custom-border:before {
   content: "";
   width: 40%;
-  height: 5px;
+  height: 5px!important;
   left: 0;
   bottom: 0;
   position: absolute;
@@ -21,7 +21,7 @@
 .custom-border:after {
   content: "";
   width: 150%;
-  height: 1.5px;
+  height: 1.5px!important;
   left: 0;
   bottom: 1.5px;
   position: absolute;
@@ -51,7 +51,7 @@
 .custom-border {
   display: inline-block;
   padding: 7px 0;
-  width: 160px;
+  width: 140px;
   position: relative;
 }
 
