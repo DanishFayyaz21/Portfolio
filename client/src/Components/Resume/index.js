@@ -53,7 +53,7 @@ const Resume = () => {
                     </h3>
                   )}
                 </Col>
-                <Col md={1} className="d-flex ">
+                <Col md={1} className=" ms-4 d-flex ">
                   {portion != "experience" && (
                     <button
                       className="tab-btn"
