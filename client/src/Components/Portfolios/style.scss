@@ -22,7 +22,6 @@
 
       z-index: 2;
       .section {
-        height: 700px;
         padding: 80px 0px;
         align-self: center;
         h2 {
@@ -31,12 +30,12 @@
         }
         .portfolio-card {
           background-color: #252525;
-          height: 230px;
+          height: 220px;
           z-index: 4px !important;
           text-align: center;
           border-radius: 12px;
           padding: 7px;
-          margin: 10px 0px;
+          margin: 10px 19%;
           object-fit: contain;
           a {
             text-decoration: none;
@@ -68,9 +67,11 @@
             transition: 1s;
             color: gray;
             font-size: 10px;
-            margin: 10px;
+            margin: 6px;
             text-align: left;
-
+            p {
+              margin-bottom: 4px;
+            }
             .role {
               font-size: 12px;
               text-align: left;
@@ -80,8 +81,9 @@
               font-weight: 700;
             }
             .tech-circle {
-              margin: 3px;
+              margin: 2px;
               width: 5rem;
+              white-space: nowrap;
               height: 17px;
               text-align: center;
               border-radius: 4px;

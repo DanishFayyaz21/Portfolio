@@ -28,7 +28,7 @@ const Resume = () => {
               </div> */}
 
               <a
-                href="../../../public/assests/Muhammad Danish CV.pdf"
+                href="../../../assests/Muhammad Danish CV.pdf"
                 className="learn-more my-2"
                 download
               >
@@ -40,7 +40,7 @@ const Resume = () => {
                 </span>
               </a>
               <div className="tab-section">
-                <Col md={2} xs={5}>
+                <Col lg={2} md={3} xs={4}>
                   {portion == "service" && (
                     <h3 className="custom-border py-2 d-flex">
                       <span className="icon">
