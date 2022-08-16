@@ -27,7 +27,7 @@ const Resume = () => {
               </div>
 
               <div className="tab-section">
-                <Col md={2}>
+                <Col md={2} xs={5}>
                   {portion == "service" && (
                     <h3 className="custom-border py-2 d-flex">
                       <span className="icon">
@@ -99,9 +99,10 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                        Education is one of the most powerful aspects of life.
+                        Education and learning allow us to make sense of the
+                        world around us, the world inside of us, and where we
+                        fit within the world.
                       </p>
                     </div>
                   </Col>
@@ -119,9 +120,8 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                        Education is the passport to the future, for tomorrow
+                        belongs to those who prepare for it today.
                       </p>
                     </div>
                   </Col>
@@ -141,9 +141,7 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                      The more that you read, the more things you will know, the more that you learn, the more places you’ll go.
                       </p>
                     </div>
                   </Col>
@@ -177,9 +175,9 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                        For every minute spent organizing, an hour is earned.
+                        The only difference between a mob and a trained army is
+                        organization.
                       </p>
                     </div>
                   </Col>
@@ -206,9 +204,9 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                        The journey of a thousand miles begins with one step.
+                        And I got my first step from here. I learn how to work
+                        and manage things professionally.
                       </p>
                     </div>
                   </Col>
@@ -301,7 +299,7 @@ const Resume = () => {
 
               {portion == "service" && (
                 <Row className="mx-md-5 service py-md-3">
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <FaReact />
@@ -317,7 +315,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <FaNodeJs />
@@ -333,7 +331,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <SiMongodb />
@@ -349,7 +347,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <BsFillPersonCheckFill />
@@ -365,7 +363,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <MdWork />
@@ -381,7 +379,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <MdEditNote />
