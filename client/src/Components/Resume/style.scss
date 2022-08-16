@@ -242,6 +242,80 @@
   #resume {
     .resume-background {
       margin-top: -100px;
+      @mixin transition(
+        $property: all,
+        $duration: 0.45s,
+        $ease: cubic-bezier(0.65, 0, 0.076, 1)
+      ) {
+        transition: $property $duration $ease;
+      }
+
+      a {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-size: 20px !important;
+        font-family: inherit;
+        &.learn-more {
+          width: 12rem;
+          height: auto;
+          .circle {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 2.3rem;
+            height: 2.3rem;
+            border-radius: 1.625rem;
+            background: linear-gradient(
+              to right,
+              rgb(110, 32, 32) 10%,
+              rgb(185, 172, 172) 90%
+            );
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+            text-align: center
+          }
+          .button-text {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 7px;
+            align-self: center;
+            color: var(--primary-color);
+            font-weight: 700;
+            line-height: 1.6;
+            font-size: 16px;
+            background-color: transparent;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+        &:hover {
+          .circle {
+            width: 70%;
+            .icon {
+              &.arrow {
+                transform: translate(1rem, 0);
+              }
+            }
+          }
+          .button-text {
+            color: #fff;
+            margin-left: -45px;
+          }
+        }
+      }
+
       .tab-section {
         display: flex;
         .tab-btn {
@@ -467,3 +541,4 @@
     }
   }
 }
+

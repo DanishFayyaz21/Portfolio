@@ -11,6 +11,7 @@ import { GiSkills } from "react-icons/gi";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { BsFillPersonCheckFill } from "react-icons/bs";
+import { AiOutlineCloudDownload } from "react-icons/ai";
 import "./sass/circle.scss";
 import "./css/circle.css";
 import { useState } from "react";
@@ -22,10 +23,22 @@ const Resume = () => {
         <Container>
           <div className="section ">
             <div className="box-shadow">
-              <div>
+              {/* <div>
                 <h2>Resume</h2>
-              </div>
+              </div> */}
 
+              <a
+                href="../../../public/assests/Muhammad Danish CV.pdf"
+                className="learn-more my-2"
+                download
+              >
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">
+                  Resume <AiOutlineCloudDownload />
+                </span>
+              </a>
               <div className="tab-section">
                 <Col md={2} xs={5}>
                   {portion == "service" && (
@@ -141,7 +154,8 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                      The more that you read, the more things you will know, the more that you learn, the more places you’ll go.
+                        The more that you read, the more things you will know,
+                        the more that you learn, the more places you’ll go.
                       </p>
                     </div>
                   </Col>
