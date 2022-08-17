@@ -11,7 +11,7 @@ const Hero = ({ goToContact }) => {
           <Col md={6} xs={6} className="details">
             <p className="name">I'm Muhammad Danish</p>
             <p className="designation">Web Developer</p>
-            <button class="learn-more my-2">
+            <button class="learn-more smy-2">
               <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
               </span>
