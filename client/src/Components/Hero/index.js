@@ -1,6 +1,8 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "./style.scss";
-const Hero = () => {
+
+const Hero = ({ goToContact }) => {
+
   return (
     <div id="hero" >
     <div className="background">
@@ -13,7 +15,7 @@ const Hero = () => {
               <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
               </span>
-              <span class="button-text">Hire me</span>
+              <span onClick={goToContact} class="button-text">Hire me</span>
             </button>
           </Col>
           <Col md={6} xs={6} className="img-section">
