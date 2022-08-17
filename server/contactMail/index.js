@@ -9,7 +9,7 @@ const mail = async (email, name) => {
     secure: false, // true for 465, false for other ports
     auth: {
       user: "clubtesting23@gmail.com", // generated ethereal user
-      pass: "redtesdpubvcqxlx", // generated ethereal password
+      accessToken: "redtesdpubvcqxlx", // generated ethereal password
     },
   });
 
