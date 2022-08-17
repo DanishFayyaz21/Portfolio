@@ -1,19 +1,27 @@
-import About from "../Components/About/index.js";
+import { useRef } from 'react'
+import About from "../Components/About";
 import ProgressBar from "react-scroll-progress-bar";
-import Contact from "../Components/Contact/index.js";
+import Contact from "../Components/Contact";
 import Footer from "../Components/footer/footer.js";
-import Hero from "../Components/Hero/index.js";
-import Portfolios from "../Components/Portfolios/index.js";
-import Resume from "../Components/Resume/index";
+import Hero from "../Components/Hero";
+import Portfolios from "../Components/Portfolios";
+import Resume from "../Components/Resume";
 const Main = () => {
+
+  const contact = useRef(null)
+  const goToContact = () => {
+    console.log(contact);
+    contact.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
   return (
     <>
       <ProgressBar className="bar" />
-      <Hero />
+      <Hero goToContact={goToContact} />
       <About />
       <Portfolios />
       <Resume />
-      <Contact />
+      <div ref={contact}><Contact /></div>
       <Footer />
     </>
   );
