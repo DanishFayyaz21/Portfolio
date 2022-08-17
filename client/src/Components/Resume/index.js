@@ -11,6 +11,7 @@ import { GiSkills } from "react-icons/gi";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { BsFillPersonCheckFill } from "react-icons/bs";
+import { AiOutlineCloudDownload } from "react-icons/ai";
 import "./sass/circle.scss";
 import "./css/circle.css";
 import { useState } from "react";
@@ -22,12 +23,24 @@ const Resume = () => {
         <Container>
           <div className="section ">
             <div className="box-shadow">
-              <div>
+              {/* <div>
                 <h2>Resume</h2>
-              </div>
+              </div> */}
 
+              <a
+                href="../../../public/assests/Muhammad Danish CV.pdf"
+                className="learn-more my-2"
+                download
+              >
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">
+                  Resume <AiOutlineCloudDownload />
+                </span>
+              </a>
               <div className="tab-section">
-                <Col md={2}>
+                <Col md={2} xs={5}>
                   {portion == "service" && (
                     <h3 className="custom-border py-2 d-flex">
                       <span className="icon">
@@ -53,7 +66,7 @@ const Resume = () => {
                     </h3>
                   )}
                 </Col>
-                <Col md={1} className="d-flex ">
+                <Col md={1} className=" ms-4 d-flex ">
                   {portion != "experience" && (
                     <button
                       className="tab-btn"
@@ -99,9 +112,10 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                        Education is one of the most powerful aspects of life.
+                        Education and learning allow us to make sense of the
+                        world around us, the world inside of us, and where we
+                        fit within the world.
                       </p>
                     </div>
                   </Col>
@@ -119,9 +133,8 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                        Education is the passport to the future, for tomorrow
+                        belongs to those who prepare for it today.
                       </p>
                     </div>
                   </Col>
@@ -141,9 +154,8 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                        The more that you read, the more things you will know,
+                        the more that you learn, the more places you’ll go.
                       </p>
                     </div>
                   </Col>
@@ -177,9 +189,9 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                        For every minute spent organizing, an hour is earned.
+                        The only difference between a mob and a trained army is
+                        organization.
                       </p>
                     </div>
                   </Col>
@@ -206,9 +218,9 @@ const Resume = () => {
                         </div>
                       </div>
                       <p className="description">
-                        The goal of cognitive science is to understand the
-                        principles of intelligence with the hope that this will
-                        lead to better comprehension.
+                        The journey of a thousand miles begins with one step.
+                        And I got my first step from here. I learn how to work
+                        and manage things professionally.
                       </p>
                     </div>
                   </Col>
@@ -301,7 +313,7 @@ const Resume = () => {
 
               {portion == "service" && (
                 <Row className="mx-md-5 service py-md-3">
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <FaReact />
@@ -317,7 +329,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <FaNodeJs />
@@ -333,7 +345,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <SiMongodb />
@@ -349,7 +361,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <BsFillPersonCheckFill />
@@ -365,7 +377,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <MdWork />
@@ -381,7 +393,7 @@ const Resume = () => {
                     </div>
                   </Col>
 
-                  <Col md={4}>
+                  <Col md={6} lg={4}>
                     <div className="service-card card">
                       <div className="circle">
                         <MdEditNote />

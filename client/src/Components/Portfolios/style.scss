@@ -284,7 +284,7 @@
         }
         .portfolio-card {
           background-color: #252525;
-          height: 300px;
+          height: 320px;
           z-index: 4px !important;
           text-align: center;
           border-radius: 12px;
@@ -325,16 +325,17 @@
             text-align: left;
 
             .role {
-              font-size: 20px;
+              font-size: 18px;
               text-align: left;
             }
             .tech {
-              font-size: 18px;
-              font-weight: 700;
+              font-size: 16px;
+              font-weight: 600;
             }
             .tech-circle {
-              margin: 0px 7px;
-              width: 5rem;
+              white-space: nowrap;
+              margin: 0px 4px;
+              width: 7rem;
               height: 25px;
               text-align: center;
               border-radius: 4px;

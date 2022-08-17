@@ -15,7 +15,7 @@ const Hero = ({ goToContact }) => {
               <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
               </span>
-              <span onClick={goToContact} class="button-text">Hire me</span>
+              <span class="button-text">Hire me</span>
             </button>
           </Col>
           <Col md={6} xs={6} className="img-section">

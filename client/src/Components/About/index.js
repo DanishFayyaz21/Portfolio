@@ -13,34 +13,32 @@ const About = () => {
                   <Image src="../../../assests/images/about2.png" />
                 </div>
               </div>
-              
             </Col>
             <Col md={8}>
               <div className="about-me">
                 <h2 className="custom-border">About Me</h2>
                 <div class="bio-text">
                   <p>
-                    For instance, whenever I go back to the guest house during
-                    the morning to copy out the contract, these gentlemen are
-                    always still sitting there eating their breakfasts. I ought
-                    to just try that with my boss; I'd get kicked out on the
-                    spot.
+                    Honestly I am not sure if I can say I am self taught but I
+                    didn't had much people around me who were ready to help and
+                    guide me. In college, I watched a few courses which were
+                    available on LAN. I tried helping a few of my college mates
+                    with their projects. Few college fest websites. Learning,
+                    things from google, youtube, and stack flow at every step.
                   </p>
                   <p>
-                    But who knows, maybe that would be the best thing for me.
-                    He'd fall right off his desk! And it's a funny sort of
-                    business to be sitting up there at your desk, <br /> talking
-                    down at your subordinates. I ought to just try that witht my
-                    boss; I'd get kicked out on the spot. But who knows, maybe
-                    that would be the best thing for me. He'd fall right off his
-                    desk! And it's a funny sort of business to be sitting up
-                    there at your desk, talking down at your subordinates.
+                    It was really hard for me to get my first job because
+                    everyone needs a person with some professional experience.
+                    So, after so many rejections I got my first job as a web
+                    developer. For 2 years I’m working as a web developer in a
+                    Company wellcreator. I have developed many websites, Mobile
+                    apps and apart from that, I have been part of web design
+                    projects, office work, and as a freelancer.
                   </p>
                 </div>
                 <div>
                   <Share />
                 </div>
-                
               </div>
             </Col>
           </Row>
