@@ -1,4 +1,4 @@
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaFacebookF,FaInstagram, FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import "./style.scss";
 const Share = () => {
@@ -17,6 +17,9 @@ const Share = () => {
         </a>
         <a href="https://www.facebook.com/I.am.M.danish/" target="_blank">
           <FaFacebookF />
+        </a>
+        <a href="https://www.instagram.com/danish.fayyaz21/" target="_blank">
+          <FaInstagram />
         </a>
         <a href="https://twitter.com/danishfayyaz21" target="_blank">
           <FaTwitter />

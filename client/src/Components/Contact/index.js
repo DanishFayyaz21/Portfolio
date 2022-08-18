@@ -157,7 +157,7 @@ const Contact = () => {
 
                   <div className="d-flex justify-content-end my-md-5">
                     <button class="learn-more my-2">
-                      <span class="circle" aria-hidden="true">
+                      <span class="circle pulse" aria-hidden="true">
                         <span class="icon arrow"></span>
                       </span>
                       <span onClick={submit} class="button-text">

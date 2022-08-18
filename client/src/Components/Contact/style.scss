@@ -115,7 +115,7 @@
             font-size: 20px !important;
             font-family: inherit;
             &.learn-more {
-              width: 12rem;
+              width: 8rem;
               height: auto;
               .circle {
                 @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -141,6 +141,7 @@
                 right: 0;
                 bottom: 0;
                 padding: 7px;
+                margin-left: 40px;
                 align-self: center;
                 color: var(--primary-color);
                 font-weight: 700;
@@ -458,7 +459,7 @@
             font-size: 20px !important;
             font-family: inherit;
             &.learn-more {
-              width: 12rem;
+              width: 10rem;
               height: auto;
               .circle {
                 @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -484,11 +485,13 @@
                 right: 0;
                 bottom: 0;
                 padding: 7px;
+                margin-left: 15px;
                 align-self: center;
                 color: var(--primary-color);
                 font-weight: 700;
                 line-height: 1.6;
                 font-size: 16px;
+
                 background-color: transparent;
                 text-align: center;
                 text-transform: uppercase;

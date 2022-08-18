@@ -12,7 +12,7 @@ const Hero = ({ goToContact }) => {
             <p className="name">I'm Muhammad Danish</p>
             <p className="designation">Web Developer</p>
             <button onClick={goToContact} class="learn-more smy-2">
-              <span class="circle" aria-hidden="true">
+              <span class="circle pulse" aria-hidden="true">
                 <span class="icon arrow"></span>
               </span>
               <span class="button-text">Hire me</span>

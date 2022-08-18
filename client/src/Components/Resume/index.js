@@ -35,8 +35,8 @@ const Resume = () => {
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>
                 </span>
-                <span class="button-text">
-                  Resume <AiOutlineCloudDownload />
+                <span class="button-text ">
+                  Resume <AiOutlineCloudDownload className="pulse" />
                 </span>
               </a>
               <div className="tab-section">
@@ -80,7 +80,7 @@ const Resume = () => {
                       className="tab-btn"
                       onClick={() => setPortion("service")}
                     >
-                      Service <MdOutlineDoubleArrow />
+                      Service <MdOutlineDoubleArrow  />
                     </button>
                   )}
                   {portion != "education" && (
