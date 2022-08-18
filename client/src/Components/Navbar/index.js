@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Container, Nav, Navbar, Image } from "react-bootstrap";
 
 import "./Navbar.scss";
-function NavBarComponent() {
+function NavBarComponent({ hero, about, portfolio, resume, contact }) {
   return (
     <Navbar variant="dark" expand="lg">
       <Container>
@@ -19,33 +19,23 @@ function NavBarComponent() {
           >
             <Link
               to="/"
-              onClick={() => {
-                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              }}
+              onClick={hero}
               className="nav-link active"
             >
               Home
             </Link>
             <Link to={"/"}
-                onClick={() => {
-                  window.scrollTo({ top: 900, left: 0, behavior: "smooth" });
-                }} className="nav-link">
+              onClick={about} className="nav-link">
               About
             </Link>
-            <Link to="/"  onClick={() => {
-                  window.scrollTo({ top: 1700, left: 0, behavior: "smooth" });
-                }} className="nav-link">
+            <Link to="/" onClick={portfolio} className="nav-link">
               Portfolio
             </Link>
-          
-            <Link to="/"  onClick={() => {
-                  window.scrollTo({ top: 2630, left: 0, behavior: "smooth" });
-                }} className="nav-link">
+
+            <Link to="/" onClick={resume} className="nav-link">
               Resume
             </Link>
-            <Link to="/"  onClick={() => {
-                  window.scrollTo({ top: 3900, left: 0, behavior: "smooth" });
-                }} className="nav-link">
+            <Link to="/" onClick={contact} className="nav-link">
               Contact
             </Link>
           </Nav>
