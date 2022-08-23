@@ -6,7 +6,6 @@ exports.contact = (req, res) => {
 
   customers.contact(newContact, (err, contactMsg) => {
     if (err) res.send(err);
-
     ContactMail(newContact.email, newContact.name);
     NotifyMail(newContact);
     console.log("hello");

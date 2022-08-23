@@ -169,6 +169,9 @@ const Contact = () => {
               </Col>
             </Row>
           </div>
+          <div>
+            <img src=""/>
+          </div>
         </Container>
       </div>
     </div>

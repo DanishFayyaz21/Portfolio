@@ -4,7 +4,7 @@ import "./style.scss";
 const Share = () => {
   return (
     <div className="share">
-      <p>Share:</p>
+
       <div className="social-logos">
         <a href="https://wa.me/+923420699570" target="_blank">
           <IoLogoWhatsapp />

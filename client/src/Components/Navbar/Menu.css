@@ -1,0 +1,139 @@
+/* Social icons */
+
+.burger-menu .social-icons{
+    padding:5px 10px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+.burger-menu .social-icons a{
+    padding:5px;
+    font-size: 16px;
+    color: #4F5A82;
+}
+/* --------------- */
+.burger-menu .text-color{
+    color: #4F5A82!important;
+}
+.burger-menu a{
+    font-size:0.9rem;
+    font-weight: 500;
+    color: #4F5A82;
+}
+.burger-menu .accordion-button:not(.collapsed){
+    background-color:#4F5A82;
+    color: #4F5A82;
+    padding: 10px 14px;
+}
+.burger-menu .accordion-body{
+    background-color: #F8F9FA;
+    color:#4F5A82!important;
+    padding:0 10px;
+}
+.burger-menu .accordion-body a{
+    padding: 8px 0px;
+}
+.burger-menu .accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+.burger-menu .accordion-item{
+    border: 0!important;
+}
+.burger-menu .accordion-button:focus{
+    box-shadow:none!important;
+}
+.burger-menu .accordion-item:last-of-type .accordion-button.collapsed{
+    color:#4F5A82;
+    padding: 10px 15px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 16px;
+    top: 27px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: red;
+  }
+  .bm-burger-bars{
+    height: 11%!important;
+    top:auto!important;
+    width: 85%;
+  }
+  .bm-burger-bars:nth-child(2){
+    top: 25%!important;
+  }
+  .bm-burger-bars:nth-child(3){
+    top:54%!important;
+  }
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+    /* left: 16px; */
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: red;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    /* top: 0px; */
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: white;
+    /* padding: 1rem; */
+    font-size: 1.15em;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    /* padding: 0.2em; */
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .burger-menu{
+    width: 75%!important;
+  }
+  
+  @media (min-width:770px){
+    .bm-burger-button {
+        display: none;
+    }
+  }

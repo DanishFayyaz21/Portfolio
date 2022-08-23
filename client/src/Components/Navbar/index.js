@@ -1,47 +1,109 @@
+
+import { slide as Menu } from 'react-burger-menu'
 import { Link } from "react-router-dom";
 import { Container, Nav, Navbar, Image } from "react-bootstrap";
+import { FiHome, FiGrid, FiPhone, FiClock, FiSettings, FiFilter, FiBold, FiFacebook, FiInstagram, FiTwitter, FiLinkedin } from 'react-icons/fi';
+import { BsPerson } from 'react-icons/bs';
+import { useState } from 'react';
+import { Accordion } from "react-bootstrap";
+import "./Menu.css";
+
 
 import "./Navbar.scss";
+import Share from '../Share';
 function NavBarComponent({ hero, about, portfolio, resume, contact }) {
-  return (
-    <Navbar variant="dark" expand="lg">
-      <Container>
-        <Link to="/" className="navbar-brand">
-          <Image src="../../../assests/images/d-logo.png" />
-          {/* <h1>Danish</h1> */}
-        </Link>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id=" navbarScroll">
-          <Nav
-            className="ms-auto stroke my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
-            <Link
-              to="/"
-              onClick={hero}
-              className="nav-link active"
-            >
-              Home
-            </Link>
-            <Link to={"/"}
-              onClick={about} className="nav-link">
-              About
-            </Link>
-            <Link to="/" onClick={portfolio} className="nav-link">
-              Portfolio
-            </Link>
+  const [isMenuOpen1, setIsMenuOpen1] = useState();
 
-            <Link to="/" onClick={resume} className="nav-link">
-              Resume
-            </Link>
-            <Link to="/" onClick={contact} className="nav-link">
-              Contact
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+  return (
+    <div>
+      <Navbar variant="dark" expand="lg">
+        <Container>
+          <Link to="/" className="navbar-brand">
+            <Image src="../../../assests/images/d-logo.png" />
+          </Link>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id=" navbarScroll">
+            <Nav
+              className="ms-auto stroke my-2 my-lg-0"
+              style={{ maxHeight: "100px" }}
+              navbarScroll
+            >
+              <Link
+                to="/"
+                onClick={hero}
+                className="nav-link active"
+              >
+                Home
+              </Link>
+              <Link to={"/"}
+                onClick={about} className="nav-link">
+                About
+              </Link>
+              <Link to="/" onClick={portfolio} className="nav-link">
+                Portfolio
+              </Link>
+
+              <Link to="/" onClick={resume} className="nav-link">
+                Resume
+              </Link>
+              <Link to="/" onClick={contact} className="nav-link">
+                Contact
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+      <div className='small-image-section'>
+        <Link to="/" className="">
+          <Image src="../../../assests/images/d-logo.png" />
+        </Link>
+      </div>
+
+      <Menu right className="burger-menu"
+        isOpen={isMenuOpen1} onClose={() => setIsMenuOpen1(false)} onOpen={() => setIsMenuOpen1(true)}
+      >
+        <div className="p-3">
+
+          <Link to="/" onClick={() => setIsMenuOpen1(false)} className="mt-2 nav-link text-color border-bottom">
+            <div className="py-2">
+              <FiHome /> &nbsp;  Home
+            </div>
+          </Link>
+          <Link to="/about-us" onClick={() => setIsMenuOpen1(false)} className="nav-link text-color border-bottom">
+            <div className="py-2">
+              <BsPerson /> &nbsp;  About Us
+            </div>
+          </Link>
+          <Link to="/portfolio" onClick={() => setIsMenuOpen1(false)} className="nav-link text-color border-bottom">
+            <div className="py-2">
+              <FiGrid /> &nbsp; Portfolio
+            </div>
+          </Link>
+
+          <Link to="/portfolio" onClick={() => setIsMenuOpen1(false)} className="nav-link text-color border-bottom">
+            <div className="py-2">
+              <FiGrid /> &nbsp; Resume
+            </div>
+          </Link>
+
+          <Link onClick={() => setIsMenuOpen1(false)} to="/contact-us" className="nav-link text-color border-bottom">
+            <div className="py-2"><FiPhone /> &nbsp; Contact Us</div>
+          </Link>
+        </div>
+        <div>
+          <div className="social-icons w-100 bg-white">
+            {/* <div className="d-flex justify-content-start">
+              <a target="blank" href="https://www.facebook.com/wellcreator"><FiFacebook /> </a>
+              <a target="blank" href="https://www.instagram.com/wellcreator/"><FiInstagram /></a>
+              <a target="_blank" href="https://twitter.com/wellcreator"><FiTwitter /></a>
+              <a target="_blank" href="https://www.linkedin.com/company/wellcreator/"><FiLinkedin /></a>
+            </div> */}
+            <Share />
+          </div>
+        </div>
+      </Menu>
+    </div>
   );
 }
 

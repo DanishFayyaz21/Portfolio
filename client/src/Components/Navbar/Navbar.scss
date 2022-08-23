@@ -44,4 +44,23 @@
   .nav-link:hover:after {
     width: 100%;
   }
+
+}
+
+@media only screen and (max-width:770px){
+  .navbar{
+    display: none;
+  }
+} 
+
+.small-image-section{
+  background-color: #202020;
+  padding: 10px ;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  img{
+    height: 60px;
+    width: 60px;
+}
 }
