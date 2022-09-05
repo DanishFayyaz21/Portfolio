@@ -22,6 +22,7 @@ const Contact = () => {
       subject: subject,
       message: message,
     };
+    console.log(formData)
     setName("");
     setEmail("");
     setPhone("");
@@ -46,7 +47,7 @@ const Contact = () => {
               <h3 className="qoute">Minding a business? let's make it!</h3>
             </div>
             <Row className="my-md-5 mx-md-3">
-              <Col  md={5}>
+              <Col md={5}>
                 <div className="contact-details">
                   <div className="contact-card">
                     <div className="contact-circle">
@@ -170,7 +171,7 @@ const Contact = () => {
             </Row>
           </div>
           <div>
-            <img src=""/>
+            <img src="" />
           </div>
         </Container>
       </div>
