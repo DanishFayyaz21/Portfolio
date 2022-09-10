@@ -64,7 +64,7 @@ const Contact = () => {
                       <AiOutlineMail />
                     </div>
                     <div className="details">
-                      <h4>Email Us</h4>
+                      <h4>Email </h4>
                       <p>danishfayyaz21@gmail.com</p>
                     </div>
                   </div>

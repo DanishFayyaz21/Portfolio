@@ -18,8 +18,8 @@
 
       z-index: 2;
       .section {
-        height: 800px;
-        padding: 90px 0px;
+        padding-top: 100px;
+        padding-bottom: 40px;
         align-self: center;
         .img-box {
           background-color: #141619;
@@ -53,9 +53,7 @@
         .about-me {
           height: 460px;
           padding: 0px 0px;
-          // color: #fff;
           h2 {
-            // color: #fff;
             font-size: 20px;
             white-space: nowrap;
           }

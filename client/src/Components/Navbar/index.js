@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { Container, Nav, Navbar, Image } from "react-bootstrap";
 import { FiHome, FiGrid, FiPhone, FiClock, FiSettings, FiFilter, FiBold, FiFacebook, FiInstagram, FiTwitter, FiLinkedin } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
+import { BiNetworkChart } from 'react-icons/bi';
 import { useState } from 'react';
-import { Accordion } from "react-bootstrap";
 import "./Menu.css";
 
 
@@ -55,7 +55,7 @@ function NavBarComponent({ hero, about, portfolio, resume, contact }) {
       </Navbar>
 
       <div className='small-image-section'>
-        <Link to="/" className="">
+        <Link to="/" >
           <Image src="../../../assests/images/d-logo.png" />
         </Link>
       </div>
@@ -88,7 +88,7 @@ function NavBarComponent({ hero, about, portfolio, resume, contact }) {
             portfolio()
           }} className="nav-link text-color border-bottom">
             <div className="py-2">
-              <FiGrid /> &nbsp; Portfolio
+              <BiNetworkChart /> &nbsp; Portfolio
             </div>
           </Link>
 
@@ -105,7 +105,7 @@ function NavBarComponent({ hero, about, portfolio, resume, contact }) {
             setIsMenuOpen1(false)
             contact()
           }} to="/" className="nav-link text-color border-bottom">
-            <div className="py-2"><FiPhone /> &nbsp; Contact Us</div>
+            <div className="py-2"><FiPhone /> &nbsp; Contact</div>
           </Link>
         </div>
         <div>
