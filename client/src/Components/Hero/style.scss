@@ -20,7 +20,7 @@
           color: #fff !important;
           font-size: 12px;
           text-transform: uppercase;
-          letter-spacing: 4px;
+          letter-spacing: 2px;
           font-weight: 100 !important;
           --tw-text-opacity: 1;
         }
@@ -106,7 +106,7 @@
         box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
         text-align: center;
         height: 138px;
-        margin-top: 150px;
+        margin-top: 160px;
         width: 138px;
         background-color: #202020;
         border-radius: 50%;
@@ -120,7 +120,6 @@
           border-radius: 50%;
           border: none;
           filter: drop-shadow(1px 1px 7px red);
-
           &:hover {
             opacity: 5;
             transform: scale(1.02);

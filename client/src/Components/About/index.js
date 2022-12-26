@@ -10,7 +10,8 @@ const About = () => {
             <Col md={4}>
               <div className="d-flex justify-content-center">
                 <div className="img-box">
-                  <Image src="../../../assests/images/about2.png" />
+                  <Image src="../../../assests/images/aboutPic.png" />
+                  {/* <img src="https://www.google.com/s2/photos/profile/{danishfayyaz91}"/> */}
                 </div>
               </div>
             </Col>
@@ -30,7 +31,7 @@ const About = () => {
                     It was really hard for me to get my first job because
                     everyone needs a person with some professional experience.
                     So, after so many rejections I got my first job as a web
-                    developer. For 2 years I’m working as a web developer in a
+                    developer. For 1 years I’m working as a web developer in a
                     Company wellcreator. I have developed many websites, Mobile
                     apps and apart from that, I have been part of web design
                     projects, office work, and as a freelancer.

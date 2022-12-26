@@ -2,7 +2,7 @@
   #resume {
     .resume-background {
       margin-top: -170px;
-      
+
       @mixin transition(
         $property: all,
         $duration: 0.45s,
@@ -41,7 +41,7 @@
             );
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
             transform: scale(1.05);
-            text-align: center
+            text-align: center;
           }
           .button-text {
             @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -151,16 +151,16 @@
                   position: relative;
                   display: block;
                   margin: 0;
-                  margin-top: 5px;
-                  width: 5rem;
-                  height: 2rem;
+                  margin-top: 2px;
+                  width: 4rem;
+                  height: 1.5rem;
                   border-radius: 1.625rem;
                   border: 1px solid var(--primary-color);
                   transform: scale(1.05);
                   text-align: center;
                   p {
                     padding-top: 3px;
-                    font-size: 16px;
+                    font-size: 12px;
                     font-weight: 500;
                     color: var(--primary-color);
                     align-self: center;
@@ -177,7 +177,7 @@
           }
           .experience {
             margin-top: 10px;
-           
+
             .box {
               .heading {
                 display: flex;
@@ -342,7 +342,7 @@
             );
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
             transform: scale(1.05);
-            text-align: center
+            text-align: center;
           }
           .button-text {
             @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -429,8 +429,6 @@
           }
 
           .education {
-
-          
             .box {
               .heading {
                 margin-top: 28px;
@@ -475,7 +473,6 @@
             }
           }
           .experience {
-           
             .box {
               margin-right: 20px;
               .heading {
@@ -538,7 +535,7 @@
               }
             }
             .skillName {
-              font-size: 24px!important;
+              font-size: 24px !important;
               font-weight: 700;
               align-self: center;
             }
@@ -603,5 +600,3 @@
     }
   }
 }
-
-

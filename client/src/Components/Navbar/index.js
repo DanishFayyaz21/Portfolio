@@ -14,6 +14,7 @@ import Share from '../Share';
 function NavBarComponent({ hero, about, portfolio, resume, contact }) {
   const [isMenuOpen1, setIsMenuOpen1] = useState();
 
+  
   return (
     <div>
       <Navbar variant="dark" expand="lg">

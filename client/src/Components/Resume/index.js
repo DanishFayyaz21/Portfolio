@@ -16,7 +16,7 @@ import "./sass/circle.scss";
 import "./css/circle.css";
 import { useState } from "react";
 const Resume = () => {
-  const [portion, setPortion] = useState("service");
+  const [portion, setPortion] = useState("experience");
   return (
     <div id="resume">
       <div className="resume-background">
