@@ -28,7 +28,7 @@ const Resume = () => {
               </div> */}
 
               <a
-                href="../../../assests/Muhammad Danish CV.pdf"
+                href="../../../assests/danish.pdf"
                 className="learn-more my-2"
                 download
               >
