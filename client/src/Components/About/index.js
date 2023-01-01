@@ -34,7 +34,7 @@ const About = () => {
                     developer. For 1 years I’m working as a web developer in a
                     Company wellcreator. I have developed many websites, Mobile
                     apps and apart from that, I have been part of web design
-                    projects, office work, and as a freelancer.
+                    projects, office work, and as a freelancer. Now a days I'm working as a MERN Stack developer at Axis.
                   </p>
                 </div>
                 <div>

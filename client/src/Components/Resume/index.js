@@ -80,7 +80,7 @@ const Resume = () => {
                       className="tab-btn"
                       onClick={() => setPortion("service")}
                     >
-                      Service <MdOutlineDoubleArrow  />
+                      Service <MdOutlineDoubleArrow />
                     </button>
                   )}
                   {portion != "education" && (
@@ -164,6 +164,37 @@ const Resume = () => {
 
               {portion == "experience" && (
                 <Row className="mx-md-3 py-md-3">
+
+                  <Col md={6} className="experience">
+                    <div className="box">
+                      <div className="heading">
+                        <div>
+                          <h4 className="designation">
+                            MERN Stack Developer
+                          </h4>
+                          <a
+                            href="https://www.axiscodingsolutions.com/"
+                            target="_blank"
+                            className="organzation"
+                          >
+                            <span>
+                              <GrOrganization className="companyIcon" />
+                            </span>{" "}
+                            Axis coding solutions
+                          </a>
+                        </div>
+                        <div>
+                          <div className="duration">
+                            <p>2022-23</p>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="description">
+                        Choose a job you love, and you will never have to work a day in your life. A mind that is stretched by new experiences can never go back to its old dimensions.
+                      </p>
+                    </div>
+                  </Col>
+
                   <Col md={6} className="experience">
                     <div className="box">
                       <div className="heading">
